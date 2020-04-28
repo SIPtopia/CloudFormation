@@ -3,7 +3,7 @@ Description: >-
   This template installs an EC2 instance with Kamailio & Siremis installed
 Parameters:
   YourPublicIP:
-    Description: 'Use the command "curl ifconfig.me" to find out your public IP address and use /32 as mask'
+    Description: 'Google "my ip" to find out your public IP address and use /32 as mask'
     Type: String
     MinLength: '9'
     MaxLength: '18'
