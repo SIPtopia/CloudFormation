@@ -9,7 +9,7 @@ Parameters:
     MaxLength: '18'
     Default: 10.10.10.10/32
     AllowedPattern: '(\d{1,3})\.(\d{1,3})\.(\d{1,3})\.(\d{1,3})/(\d{1,2})'
-    ConstraintDescription: must be a valid IP CIDR range of the form x.x.x.x/x.
+    ConstraintDescription: Must be a valid IP address in the x.x.x.x/x format
 Resources:
   SIP:
     Type: 'AWS::EC2::Instance'
@@ -26,7 +26,7 @@ Resources:
   SIPSecurityGroup:
     Type: 'AWS::EC2::SecurityGroup'
     Properties:
-      GroupDescription: EnableSSHandSIPaccess
+      GroupDescription: EnableSIPhttpSSH
       SecurityGroupIngress:
         - IpProtocol: tcp
           FromPort: '80'
