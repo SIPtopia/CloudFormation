@@ -14,7 +14,7 @@ Resources:
   SIP:
     Type: 'AWS::EC2::Instance'
     Properties:
-      ImageId: ami-0bd4489885512c160
+      ImageId: ami-0a106fbc465447dd5
       InstanceType: "t2.micro"
       SecurityGroups:
         - !Ref SIPSecurityGroup
